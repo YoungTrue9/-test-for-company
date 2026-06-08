@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Online courses catalog test task" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+    <title>Online Courses</title>
+  </head>
+  <body>
+    <main class="page">
+      <section class="courses" aria-labelledby="courses-title">
+        <span class="courses__decor courses__decor_dots" aria-hidden="true"></span>
+
+        <svg
+          class="courses__decor courses__decor_circles"
+          width="83"
+          height="44"
+          viewBox="0 0 83 44"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path d="M0 6.41A15.59 15.59 0 0 1 0 37.59V6.41Z" />
+          <path d="M25.91 6.41A15.59 15.59 0 0 1 25.91 37.59V6.41Z" />
+          <path d="M51.82 6.41A15.59 15.59 0 0 1 51.82 37.59V6.41Z" />
+        </svg>
+
+        <svg
+          class="courses__decor courses__decor_arrows"
+          width="85"
+          height="85"
+          viewBox="0 0 85 85"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <g fill="#FFE8A3">
+            <g transform="translate(0 57)">
+              <rect x="0" y="0" width="28" height="10" />
+              <rect x="18" y="0" width="10" height="28" />
+            </g>
+
+            <g transform="translate(19 38)">
+              <rect x="0" y="0" width="28" height="10" />
+              <rect x="18" y="0" width="10" height="28" />
+            </g>
+
+            <g transform="translate(38 19)">
+              <rect x="0" y="0" width="28" height="10" />
+              <rect x="18" y="0" width="10" height="28" />
+            </g>
+
+            <g transform="translate(57 0)">
+              <rect x="0" y="0" width="28" height="10" />
+              <rect x="18" y="0" width="10" height="28" />
+            </g>
+          </g>
+        </svg>
+
+        <div class="courses__header">
+          <p class="courses__subtitle">Enjoy your studying!</p>
+          <h1 class="courses__title" id="courses-title">Our online courses</h1>
+        </div>
+
+        <div class="courses__controls">
+          <div class="courses__filters" id="filters" aria-label="Course categories"></div>
+
+          <label class="courses__search" aria-label="Search course">
+            <input
+              class="courses__search-input"
+              id="search"
+              type="search"
+              placeholder="Search course..."
+              autocomplete="off"
+            />
+            <svg class="courses__search-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+              <use href="/icons.svg#search"></use>
+            </svg>
+          </label>
+        </div>
+
+        <div class="courses__grid" id="courses"></div>
+
+        <button class="courses__load-more" id="loadMore" type="button">
+          <span class="courses__load-icon" aria-hidden="true"></span>
+          <span class="courses__load-text">Load more</span>
+        </button>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
